@@ -12,12 +12,25 @@
 
 
 ## Methodology
-### 1) Deep Dataset Understanding: In-depth analysis of the dataset structure and features.
-### 2) Robust Data Preprocessing: Includes handling missing values, feature scaling, categorical encoding, and feature reduction.
-##  3) Model Development:
-### 3.1) Basic Machine Learning Model: Random Forest Classifier and Regressor for predicting 'UNIQUELOCATION' and geographic coordinates.
-### 3.2) Deep Learning Model: Feed-forward neural networks for enhanced accuracy in spatial localization.
-
+- Deep Dataset Understanding: In-depth analysis of the dataset structure and features.
+- Robust Data Preprocessing: Includes handling missing values, feature scaling, categorical encoding, and feature reduction.
+- Missing values in signal strengths were replaced with a standard minimum value.
+- Signal strength values were normalized to ensure balanced input feature influence.
+- Categorical variables like Building ID and Space ID were encoded into numerical values.
+- Features not contributing to localization accuracy, such as TIMESTAMP, USERID, and PHONEID, were removed.
+- Introduced 'UNIQUELOCATION' as a composite feature to encapsulate specific indoor locations.
+## Model Development:
+- Basic Machine Learning Model: Random Forest Classifier and Regressor for predicting 'UNIQUELOCATION' and geographic coordinates.
+- Deep Learning Model: Feed-forward neural networks (FNNs) for enhanced accuracy in spatial localization. The model predicts the 'UNIQUELOCATION' and geographical coordinates using layers designed to recognize intricate signal patterns.
 ## Results
-### Random Forest Classifier: Achieved an accuracy of approximately 86.25% on training data and 94.17% on validation data.
-#### Deep Learning Model: Maintained accuracy of about 82.17% on validation data, with high precision in predicting geographic coordinates.
+- Random Forest Classifier: Achieved an accuracy of approximately 86.25% on training data and 94.17% on validation data.
+- Deep Learning Model: Maintained accuracy of about 82.17% on validation data, with high precision in predicting geographic coordinates.
+
+## Limitations
+- The performance is heavily dependent on the quality and granularity of WLAN fingerprinting data.
+- Further testing is needed in more varied and less controlled environments to assess real-world applicability.
+## Future Work
+- Explore integration with other sensor technologies to enhance localization accuracy.
+- Address computational efficiency and privacy concerns for real-world applications.
+## Acknowledgments
+- Special thanks to Dr. Bekir Sait Ciftler for his guidance and support throughout this project.

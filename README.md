@@ -3,8 +3,8 @@
 - This project utilizes the UJIIndoorLoc dataset to develop machine learning and deep learning models for accurate indoor localization using WLAN fingerprinting. Our models demonstrate high accuracy in predicting unique indoor positions and geographic coordinates, offering potential improvements in indoor navigation, asset tracking, and emergency response services.
 
 ## Team Members
-- Ayah Nassar – 60101805
-- Sumaya Al-Hamdan – 60105006
+- Ayah Nassar
+- Sumaya Al-Hamdan 
 
 ## Dataset
 - The UJIIndoorLoc dataset contains over 19,000 training instances and 1,111 validation instances, covering WiFi fingerprints across three buildings. This rich dataset provides a complex challenge for indoor localization.
